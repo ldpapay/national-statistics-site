@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StatAtlas — National Statistics Explorer</title>
+<meta name="description" content="Explore real national statistics for 12 countries, 2019–2024: population, GDP, life expectancy, unemployment, inflation and more. Source: World Bank, World Development Indicators.">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAP0lEQVR4nGO82cfCQAowfddEknomklSTAUYtGLVg1IJRC0YtoAZgIbV8f1mRRpL6oR9EoxaMWjBqwagFI8ICAM/sBr6Y49ywAAAAAElFTkSuQmCC">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/"><span class="brand-mark" aria-hidden="true">▦</span> StatAtlas</a>
+  <nav class="mainnav" aria-label="Main navigation">
+    <a href="#/" data-nav="overview">Overview</a>
+    <a href="#/countries" data-nav="countries">Countries</a>
+    <a href="#/compare" data-nav="compare">Compare</a>
+    <a href="#/rankings" data-nav="rankings">Rankings</a>
+    <a href="#/sources" data-nav="sources">Sources</a>
+  </nav>
+  <label class="year-pick">Year
+    <select id="yearSelect" aria-label="Data year"></select>
+  </label>
+</header>
+<main id="app" aria-live="polite"></main>
+<footer class="sitefoot">
+  <p><strong>StatAtlas</strong> — an independent national-statistics explorer. All figures are real, from the
+  World Bank's World Development Indicators, retrieved 27 November 2026. Every figure on this site shows its
+  source and year. <a href="#/sources">Sources &amp; methods</a></p>
+  <p class="foot-note">12 countries · 8 indicators · 2019–2024 · Works offline from its own files.</p>
+</footer>
+</body>
+</html>
